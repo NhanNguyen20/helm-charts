@@ -15,10 +15,10 @@ spec:
     name: {{ include "helm.fullname" . }}
     weight: 100
   port:
-    targetPort: http
+    targetPort: {{ .Values.service.targetPort }}
   {{- if .Values.route.tls.enabled }}
   tls:
-    termination: edge
+    termination: {{ .Values.route.tls.termination | default "edge" }}
     insecureEdgeTerminationPolicy: Redirect
   {{- end }}
   wildcardPolicy: None
