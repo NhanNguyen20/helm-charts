@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  helm:
+  - apiVersion: v2
+    created: "2025-02-18T02:08:55.5355+07:00"
+    description: A Helm chart for Kubernetes - OpenShift cluster
+    digest: 6b1d61b8fad38019336874ec45cec3366dd5659867350e926757e11e3e0b2347
+    name: helm
+    type: application
+    urls:
+    - https://nhannguyen20.github.io/helm-charts/helm-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-02-18T02:08:55.53449+07:00"
